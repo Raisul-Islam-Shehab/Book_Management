@@ -10,7 +10,7 @@ var (
 )
 
 func Connect(){
-	dsn := "shehab:shehab007/myDb?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:@tcp(127.0.0.1:3306)/Book_Management?charset=utf8&parseTime=True&loc=Local"
 	d, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if err != nil{
