@@ -3,7 +3,6 @@ package controllers
 import (
 	"Book_Management/pkg/models"
 	"Book_Management/pkg/utils"
-	// "encoding/json"
 	"fmt"
 	"github.com/labstack/echo/v4"
 	"net/http"
@@ -14,7 +13,6 @@ var NewBook models.Book
 
 func GetBook(c echo.Context) error {
 	newBooks := models.GetAllBooks()
-	//	res, _ := json.Marshal(newBooks)
 	return c.JSON(http.StatusOK, newBooks)
 }
 

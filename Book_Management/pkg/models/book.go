@@ -2,7 +2,6 @@ package models
 
 import (
 	"Book_Management/pkg/config"
-
 	"gorm.io/gorm"
 )
 
